@@ -17,7 +17,7 @@ test.describe('Login Page', () => {
 
     // Preconditions: User is on the Login Page
     await loginPage.goto();
-    await expect(loginPage.isLoaded()).toBe(true);
+    await expect(loginPage.usernameInput).toBeVisible();
 
     // Steps
     await loginPage.login(testData['US-001-TC-02'].rows[0].testValue, testData['US-001-TC-02'].rows[1].testValue);
