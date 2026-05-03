@@ -19,6 +19,7 @@ test.describe('Login Page', () => {
     await pom.goto();
     await pom.isLoaded();
 
-    await expect(page).toHaveURL(/.+/);
+    await pom.login(data.username, data.password);
+    await expect(page).toHaveURL(/logged-in-successfully/);
   });
 });
