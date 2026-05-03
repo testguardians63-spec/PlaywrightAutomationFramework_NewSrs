@@ -40,7 +40,8 @@ jobs:
           for spec in $(find tests -name "*.spec.js" -o -name "*.spec.ts" | sort); do
             FILENAME=$(basename "$spec")
             echo "========== Running: $FILENAME =========="
-              PLAYWRIGHT_JSON_OUTPUT_NAME="individual-results/${FILENAME}.json" npx playwright test "$spec" --project=chromium --workers=1 --retries=0 --reporter=json 2>&1 || true
+            PLAYWRIGHT_JSON_OUTPUT_NAME="individual-results/${FILENAME}.json" \\
+              npx playwright test "$spec" --project=chromium --workers=1 --retries=0 --reporter=json 2>&1 || true
             if [ ! -f "individual-results/${FILENAME}.json" ]; then
               echo "{\\"suites\\":[],\\"errors\\":[{\\"message\\":\\"File failed to load: $FILENAME\\",\\"location\\":{\\"file\\":\\"$spec\\",\\"line\\":0,\\"column\\":0}}],\\"stats\\":{\\"duration\\":0,\\"expected\\":0,\\"unexpected\\":0,\\"skipped\\":0,\\"flaky\\":0}}" > "individual-results/${FILENAME}.json"
             fi
