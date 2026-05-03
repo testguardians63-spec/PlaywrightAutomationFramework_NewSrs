@@ -12,7 +12,7 @@ export default class LoginPage {
   get blogLink() { return this.page.locator('a[href="https://practicetestautomation.com/blog/"]'); }
   get contactLink() { return this.page.locator('a[href="https://practicetestautomation.com/contact/"]'); }
   get privacyPolicyLink() { return this.page.locator('a[href="https://practicetestautomation.com/privacy-policy/"]'); }
-  get usernameInput() { return this.page.locator('#username'); }
+  get usernameInput() { return this.page.locator('username'); }
   get passwordInput() { return this.page.locator('#password'); }
   get toggleNavigationButton() { return this.page.locator('#toggle-navigation'); }
   get submitButton() { return this.page.locator('#submit'); }
