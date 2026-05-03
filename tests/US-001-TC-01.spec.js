@@ -17,13 +17,13 @@ test.describe('Login Page', () => {
 
     // Preconditions: User is on the Login Page
     await loginPage.goto(testData.navigationUrl);
-    await expect(loginPage.isLoaded()).toBe(true);
+    await loginPage.isLoaded();
 
     // Steps
     await loginPage.login(testData.credentialsUsed.username, testData.credentialsUsed.password);
 
     // Expected
-    await expect(page.url()).toContain('/success');
+    await expect(page).toHaveURL('https://practicetestautomation.com/logged-in-successfully/');
     await expect(page.locator('text=Congratulations')).toBeVisible();
     await expect(page.locator('text=Log out')).toBeVisible();
   });
