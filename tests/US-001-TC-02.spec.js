@@ -20,7 +20,7 @@ test.describe('Login Page', () => {
     await expect(loginPage.isLoaded()).toBe(true);
 
     // Steps
-    await loginPage.login(testData['US-001-TC-02'].testDataRows[0].testValue, testData['US-001-TC-02'].testDataRows[1].testValue);
+    await loginPage.login(testData['US-001-TC-02'].rows[0].testValue, testData['US-001-TC-02'].rows[1].testValue);
 
     // Expected: Error message 'Your username is invalid!' is displayed below the Username field.
     await expect(loginPage.getUsernameErrorMessage()).toBe('Your username is invalid!');
