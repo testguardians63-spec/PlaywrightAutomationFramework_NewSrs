@@ -29,7 +29,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 2283,
+                      "duration": 587,
                       "error": {
                         "message": "TypeError: Cannot read properties of undefined (reading 'username')",
                         "stack": "TypeError: Cannot read properties of undefined (reading 'username')\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:23:52",
@@ -53,7 +53,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-03T13:38:42.261Z",
+                      "startTime": "2026-05-03T13:44:03.595Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -125,7 +125,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 665,
+                      "duration": 509,
                       "error": {
                         "message": "TypeError: Cannot read properties of undefined (reading '0')",
                         "stack": "TypeError: Cannot read properties of undefined (reading '0')\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js:23:56",
@@ -149,7 +149,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-03T13:38:47.166Z",
+                      "startTime": "2026-05-03T13:44:06.890Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -221,7 +221,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 717,
+                      "duration": 505,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mPromise {}\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mPromise {}\u001b[39m\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js:20:40",
@@ -245,7 +245,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-03T13:38:49.311Z",
+                      "startTime": "2026-05-03T13:44:09.047Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -306,8 +306,8 @@
     }
   ],
   "stats": {
-    "startTime": "2026-05-03T13:38:51.120Z",
-    "duration": 6974.628999999999,
+    "startTime": "2026-05-03T13:44:10.758Z",
+    "duration": 5082.81,
     "expected": 0,
     "skipped": 0,
     "unexpected": 3,
