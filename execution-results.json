@@ -1,0 +1,316 @@
+{
+  "suites": [
+    {
+      "title": "US-001-TC-01.spec.js",
+      "file": "US-001-TC-01.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Page",
+          "file": "US-001-TC-01.spec.js",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "US-001-TC-01 - User can log in with valid credentials",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2283,
+                      "error": {
+                        "message": "TypeError: Cannot read properties of undefined (reading 'username')",
+                        "stack": "TypeError: Cannot read properties of undefined (reading 'username')\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:23:52",
+                        "location": {
+                          "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js",
+                          "column": 52,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[90m// Steps\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(testData\u001b[33m.\u001b[39mcredentialsUsed\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m testData\u001b[33m.\u001b[39mcredentialsUsed\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[90m// Expected\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://practicetestautomation.com/logged-in-successfully/'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js",
+                            "column": 52,
+                            "line": 23
+                          },
+                          "message": "TypeError: Cannot read properties of undefined (reading 'username')\n\n  21 |\n  22 |     // Steps\n> 23 |     await loginPage.login(testData.credentialsUsed.username, testData.credentialsUsed.password);\n     |                                                    ^\n  24 |\n  25 |     // Expected\n  26 |     await expect(page).toHaveURL('https://practicetestautomation.com/logged-in-successfully/');\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:23:52"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-03T13:38:42.261Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-01-Login-Page-US-c5f6c-g-in-with-valid-credentials-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-01-Login-Page-US-c5f6c-g-in-with-valid-credentials-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-01-Login-Page-US-c5f6c-g-in-with-valid-credentials-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-01-Login-Page-US-c5f6c-g-in-with-valid-credentials-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js",
+                        "column": 52,
+                        "line": 23
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7820bf0ebf04d56488be-bd66d691488d4a0d92fd",
+              "file": "US-001-TC-01.spec.js",
+              "line": 15,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "US-001-TC-02.spec.js",
+      "file": "US-001-TC-02.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Page",
+          "file": "US-001-TC-02.spec.js",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "US-001-TC-02 - Unsuccessful login using invalid username shows error message",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 665,
+                      "error": {
+                        "message": "TypeError: Cannot read properties of undefined (reading '0')",
+                        "stack": "TypeError: Cannot read properties of undefined (reading '0')\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js:23:56",
+                        "location": {
+                          "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js",
+                          "column": 56,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[90m// Steps\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(testData[\u001b[32m'US-001-TC-02'\u001b[39m]\u001b[33m.\u001b[39mrows[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mtestValue\u001b[33m,\u001b[39m testData[\u001b[32m'US-001-TC-02'\u001b[39m]\u001b[33m.\u001b[39mrows[\u001b[35m1\u001b[39m]\u001b[33m.\u001b[39mtestValue)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[90m// Expected: Error message 'Your username is invalid!' is displayed below the Username field.\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39mgetUsernameErrorMessage())\u001b[33m.\u001b[39mtoBe(\u001b[32m'Your username is invalid!'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js",
+                            "column": 56,
+                            "line": 23
+                          },
+                          "message": "TypeError: Cannot read properties of undefined (reading '0')\n\n  21 |\n  22 |     // Steps\n> 23 |     await loginPage.login(testData['US-001-TC-02'].rows[0].testValue, testData['US-001-TC-02'].rows[1].testValue);\n     |                                                        ^\n  24 |\n  25 |     // Expected: Error message 'Your username is invalid!' is displayed below the Username field.\n  26 |     await expect(loginPage.getUsernameErrorMessage()).toBe('Your username is invalid!');\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js:23:56"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-03T13:38:47.166Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-02-Login-Page-US-b4a56-sername-shows-error-message-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-02-Login-Page-US-b4a56-sername-shows-error-message-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-02-Login-Page-US-b4a56-sername-shows-error-message-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-02-Login-Page-US-b4a56-sername-shows-error-message-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js",
+                        "column": 56,
+                        "line": 23
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a57a0455a65569d03739-dd3134ba950c5c6eac23",
+              "file": "US-001-TC-02.spec.js",
+              "line": 15,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "US-001-TC-03.spec.js",
+      "file": "US-001-TC-03.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Page",
+          "file": "US-001-TC-03.spec.js",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "US-001-TC-03 - Unsuccessful login using invalid password shows error message",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 717,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mPromise {}\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mPromise {}\u001b[39m\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js:20:40",
+                        "location": {
+                          "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js",
+                          "column": 40,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[90m// Preconditions: User is on the Login Page\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39misLoaded())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[90m// Steps\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(testData[\u001b[32m'US-001-TC-03'\u001b[39m]\u001b[33m.\u001b[39mtestDataRows[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mtestValue\u001b[33m,\u001b[39m testData[\u001b[32m'US-001-TC-03'\u001b[39m]\u001b[33m.\u001b[39mtestDataRows[\u001b[35m1\u001b[39m]\u001b[33m.\u001b[39mtestValue)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js",
+                            "column": 40,
+                            "line": 20
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mPromise {}\u001b[39m\n\n  18 |     // Preconditions: User is on the Login Page\n  19 |     await loginPage.goto();\n> 20 |     await expect(loginPage.isLoaded()).toBe(true);\n     |                                        ^\n  21 |\n  22 |     // Steps\n  23 |     await loginPage.login(testData['US-001-TC-03'].testDataRows[0].testValue, testData['US-001-TC-03'].testDataRows[1].testValue);\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js:20:40"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-03T13:38:49.311Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-03-Login-Page-US-60209-assword-shows-error-message-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-03-Login-Page-US-60209-assword-shows-error-message-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-03-Login-Page-US-60209-assword-shows-error-message-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-03-Login-Page-US-60209-assword-shows-error-message-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js",
+                        "column": 40,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a0f5a6c1fa503101fe58-4b0d34b3a816c307e6be",
+              "file": "US-001-TC-03.spec.js",
+              "line": 15,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "message": "SyntaxError: /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-04.spec.js: Unexpected token, expected \",\" (15:179)\n\n\u001b[0m \u001b[90m 13 |\u001b[39m \u001b[90m   * @priority TODO\u001b[39m\n \u001b[90m 14 |\u001b[39m \u001b[90m   */\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m   test(\u001b[32m'US-001-TC-04 - Successful login Navigates to new page(new page URL contains practicetestautomation.com/logged-in-successfully/) to show Log out button and expected text ('\u001b[39m\u001b[33mCongratulations\u001b[39m\u001b[32m' or '\u001b[39msuccessfully logged \u001b[36min\u001b[39m\u001b[32m') to be displayed'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m                                                                                                                                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m testData[\u001b[32m'US-001-TC-04'\u001b[39m] \u001b[33m||\u001b[39m {}\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mconst\u001b[39m pom \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m\u001b[0m",
+      "stack": "SyntaxError: /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-04.spec.js: Unexpected token, expected \",\" (15:179)\n\n\u001b[0m \u001b[90m 13 |\u001b[39m \u001b[90m   * @priority TODO\u001b[39m\n \u001b[90m 14 |\u001b[39m \u001b[90m   */\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m   test(\u001b[32m'US-001-TC-04 - Successful login Navigates to new page(new page URL contains practicetestautomation.com/logged-in-successfully/) to show Log out button and expected text ('\u001b[39m\u001b[33mCongratulations\u001b[39m\u001b[32m' or '\u001b[39msuccessfully logged \u001b[36min\u001b[39m\u001b[32m') to be displayed'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m                                                                                                                                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m testData[\u001b[32m'US-001-TC-04'\u001b[39m] \u001b[33m||\u001b[39m {}\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mconst\u001b[39m pom \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m\u001b[0m",
+      "location": {
+        "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-04.spec.js",
+        "line": 15,
+        "column": 179
+      },
+      "snippet": "   at US-001-TC-04.spec.js:15\n\n\u001b[0m \u001b[90m 13 |\u001b[39m \u001b[90m   * @priority TODO\u001b[39m\n \u001b[90m 14 |\u001b[39m \u001b[90m   */\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m   test(\u001b[32m'US-001-TC-04 - Successful login Navigates to new page(new page URL contains practicetestautomation.com/logged-in-successfully/) to show Log out button and expected text ('\u001b[39m\u001b[33mCongratulations\u001b[39m\u001b[32m' or '\u001b[39msuccessfully logged \u001b[36min\u001b[39m\u001b[32m') to be displayed'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m                                                                                                                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m testData[\u001b[32m'US-001-TC-04'\u001b[39m] \u001b[33m||\u001b[39m {}\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mconst\u001b[39m pom \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m\u001b[0m"
+    },
+    {
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+    }
+  ],
+  "stats": {
+    "startTime": "2026-05-03T13:38:51.120Z",
+    "duration": 6974.628999999999,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
