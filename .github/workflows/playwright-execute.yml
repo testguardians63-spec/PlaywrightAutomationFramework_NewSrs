@@ -1,0 +1,107 @@
+name: Playwright Execution
+
+on:
+  workflow_dispatch:
+    inputs:
+      pipeline_id:
+        description: Pipeline ID
+        required: true
+        type: string
+      branch:
+        description: Branch to test
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Run Playwright tests
+        run: |
+          mkdir -p individual-results
+          for spec in $(find tests -name "*.spec.js" -o -name "*.spec.ts" | sort); do
+            FILENAME=$(basename "$spec")
+            echo "========== Running: $FILENAME =========="
+            PLAYWRIGHT_JSON_OUTPUT_NAME="individual-results/${FILENAME}.json" \\
+              npx playwright test "$spec" --project=chromium --workers=1 --retries=0 --reporter=json 2>&1 || true
+            if [ ! -f "individual-results/${FILENAME}.json" ]; then
+              echo "{\\"suites\\":[],\\"errors\\":[{\\"message\\":\\"File failed to load: $FILENAME\\",\\"location\\":{\\"file\\":\\"$spec\\",\\"line\\":0,\\"column\\":0}}],\\"stats\\":{\\"duration\\":0,\\"expected\\":0,\\"unexpected\\":0,\\"skipped\\":0,\\"flaky\\":0}}" > "individual-results/${FILENAME}.json"
+            fi
+          done
+          echo "========== Merging results =========="
+          node -e "
+            const fs = require('fs');
+            const path = require('path');
+            const dir = 'individual-results';
+            const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+            const merged = {
+              suites: [],
+              errors: [],
+              stats: { startTime: new Date().toISOString(), duration: 0, expected: 0, skipped: 0, unexpected: 0, flaky: 0 }
+            };
+            for (const f of files) {
+              try {
+                const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+                if (data.suites) merged.suites.push(...data.suites);
+                if (data.errors) merged.errors.push(...data.errors);
+                if (data.stats) {
+                  merged.stats.duration += data.stats.duration || 0;
+                  merged.stats.expected += data.stats.expected || 0;
+                  merged.stats.skipped += data.stats.skipped || 0;
+                  merged.stats.unexpected += data.stats.unexpected || 0;
+                  merged.stats.flaky += data.stats.flaky || 0;
+                }
+              } catch (e) {
+                merged.errors.push({ message: 'Failed to parse: ' + f + ' - ' + e.message });
+              }
+            }
+            fs.writeFileSync('execution-results.json', JSON.stringify(merged, null, 2));
+            console.log('Merged ' + files.length + ' result files');
+            console.log('Suites: ' + merged.suites.length + ' | Errors: ' + merged.errors.length);
+            console.log('Passed: ' + merged.stats.expected + ' | Failed: ' + merged.stats.unexpected);
+          "
+
+      - name: Push results to branch
+        if: always()
+        env:
+          BRANCH: ${{ github.event.inputs.branch }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ ! -f execution-results.json ]; then
+            echo '{"error":"no results file","stats":{"expected":0,"unexpected":0,"skipped":0,"duration":0}}' > execution-results.json
+          fi
+          git add execution-results.json -f
+          git commit -m "ci: execution results [skip ci]" || true
+          git push origin HEAD:${BRANCH} || true
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: |
+            test-results/
+            playwright-report/
+            individual-results/
+            execution-results.json
+          retention-days: 30
+          if-no-files-found: ignore
