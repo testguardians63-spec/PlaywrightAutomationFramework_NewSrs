@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import UnknownPage from '../pages/UnknownPage.js';
+import LoginPage from '../pages/LoginPage.js';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -15,7 +15,7 @@ test.describe('Login Page', () => {
   test('US-001-TC-02 - Unsuccessful login using invalid username shows error message', async ({ page }) => {
     // Arrange
     const data = testData['US-001-TC-02'] || {};
-    const pom = new UnknownPage(page);
+    const pom = new LoginPage(page);
 
     // Act
     await pom.goto();
