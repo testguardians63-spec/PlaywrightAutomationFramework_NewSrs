@@ -14,8 +14,8 @@ test.describe('Login Page', () => {
     // Act
     await pom.goto();
     await pom.isLoaded();
-    await pom.usernameInput.fill('validusername');
-    await pom.passwordInput.fill('password123');
+    await pom.usernameInput.fill('student'); // Fixed username
+    await pom.passwordInput.fill('Password123'); // Fixed password
     await pom.submitButton.click();
 
     // Assert
