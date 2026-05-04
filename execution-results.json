@@ -29,7 +29,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11603,
+                      "duration": 11531,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:23:29",
@@ -38,7 +38,7 @@
                           "column": 29,
                           "line": 23
                         },
-                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39misLoaded()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mcredentialsUsed\u001b[33m.\u001b[39musername)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mcredentialsUsed\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \n \u001b[90m 26 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39misLoaded()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mcredentialsUsed\u001b[33m.\u001b[39musername)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mcredentialsUsed\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
@@ -47,13 +47,13 @@
                             "column": 29,
                             "line": 23
                           },
-                          "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n\n  21 |     await pom.goto();\n  22 |     await pom.isLoaded();\n> 23 |     await pom.usernameInput.fill(data.credentialsUsed.username);\n     |                             ^\n  24 |     await pom.passwordInput.fill(data.credentialsUsed.password);\n  25 |     \n  26 |\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:23:29"
+                          "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n\n  21 |     await pom.goto();\n  22 |     await pom.isLoaded();\n> 23 |     await pom.usernameInput.fill(data.credentialsUsed.username);\n     |                             ^\n  24 |     await pom.passwordInput.fill(data.credentialsUsed.password);\n  25 |     await pom.submitButton.click();\n  26 |\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:23:29"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T19:42:25.723Z",
+                      "startTime": "2026-05-04T19:47:00.267Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -125,7 +125,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11511,
+                      "duration": 11384,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js:23:29",
@@ -149,7 +149,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T19:42:39.315Z",
+                      "startTime": "2026-05-04T19:47:13.836Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -221,7 +221,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11311,
+                      "duration": 11399,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js:23:29",
@@ -245,7 +245,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T19:42:52.694Z",
+                      "startTime": "2026-05-04T19:47:27.138Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -317,7 +317,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11221,
+                      "duration": 11442,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-04.spec.js:23:29",
@@ -341,7 +341,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T19:43:05.865Z",
+                      "startTime": "2026-05-04T19:47:40.450Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -387,8 +387,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-04T19:43:17.331Z",
-    "duration": 49265.345,
+    "startTime": "2026-05-04T19:47:52.138Z",
+    "duration": 49452.78,
     "expected": 0,
     "skipped": 0,
     "unexpected": 4,
