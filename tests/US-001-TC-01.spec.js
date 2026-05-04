@@ -21,7 +21,7 @@ test.describe('Login Page', () => {
     await pom.goto();
     await pom.isLoaded();
     await pom.usernameInput.fill(data.credentialsUsed.username);
-    await pom.passwordInput.fill(data.credentialsUsed.password);
+    await pom.passwordInput.click(data.credentialsUsed.password);
     await pom.submitButton.click();
 
     // Assert
