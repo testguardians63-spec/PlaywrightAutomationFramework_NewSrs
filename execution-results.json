@@ -29,7 +29,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6215,
+                      "duration": 6165,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:22:24",
@@ -53,7 +53,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T20:45:22.771Z",
+                      "startTime": "2026-05-04T20:46:41.504Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -125,7 +125,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6222,
+                      "duration": 6152,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js:28:24",
@@ -149,7 +149,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T20:45:31.103Z",
+                      "startTime": "2026-05-04T20:46:49.783Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -221,12 +221,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 837,
+                      "duration": 811,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T20:45:39.298Z",
+                      "startTime": "2026-05-04T20:46:57.908Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -272,12 +272,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 866,
+                      "duration": 815,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T20:45:41.999Z",
+                      "startTime": "2026-05-04T20:47:00.627Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -297,8 +297,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-04T20:45:43.070Z",
-    "duration": 17830.546,
+    "startTime": "2026-05-04T20:47:01.644Z",
+    "duration": 17672.594,
     "expected": 2,
     "skipped": 0,
     "unexpected": 2,
