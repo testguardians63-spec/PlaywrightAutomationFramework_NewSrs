@@ -29,7 +29,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11553,
+                      "duration": 11628,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:23:29",
@@ -53,7 +53,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T14:25:23.212Z",
+                      "startTime": "2026-05-04T14:30:44.527Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -125,7 +125,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11051,
+                      "duration": 11368,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js:23:29",
@@ -149,7 +149,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T14:25:36.430Z",
+                      "startTime": "2026-05-04T14:30:59.156Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -221,7 +221,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11101,
+                      "duration": 11466,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js:23:29",
@@ -245,7 +245,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T14:25:49.037Z",
+                      "startTime": "2026-05-04T14:31:12.393Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -317,7 +317,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11044,
+                      "duration": 11471,
                       "error": {
                         "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n",
                         "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-04.spec.js:23:29",
@@ -341,7 +341,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T14:26:01.697Z",
+                      "startTime": "2026-05-04T14:31:25.738Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -387,8 +387,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-04T14:26:12.946Z",
-    "duration": 47751.106,
+    "startTime": "2026-05-04T14:31:37.447Z",
+    "duration": 50552.64,
     "expected": 0,
     "skipped": 0,
     "unexpected": 4,
