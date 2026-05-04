@@ -15,7 +15,7 @@
           "specs": [
             {
               "title": "US-001-TC-01 - User can log in with valid credentials",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -28,18 +28,63 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5175,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 5762,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:28:24",
+                        "location": {
+                          "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js",
+                          "column": 24,
+                          "line": 28
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[90m// Assert\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://practicetestautomation.com/logged-in-successfully/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(pom\u001b[33m.\u001b[39merrorMessage)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js",
+                            "column": 24,
+                            "line": 28
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n\n\n  26 |\n  27 |     // Assert\n> 28 |     await expect(page).toHaveURL('https://practicetestautomation.com/logged-in-successfully/');\n     |                        ^\n  29 |     await expect(pom.errorMessage).not.toBeVisible();\n  30 |   });\n  31 | });\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:28:24"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T19:13:08.815Z",
+                      "startTime": "2026-05-04T19:15:51.154Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-01-Login-Page-US-c5f6c-g-in-with-valid-credentials-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-01-Login-Page-US-c5f6c-g-in-with-valid-credentials-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-01-Login-Page-US-c5f6c-g-in-with-valid-credentials-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-01-Login-Page-US-c5f6c-g-in-with-valid-credentials-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js",
+                        "column": 24,
+                        "line": 28
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "7820bf0ebf04d56488be-bd66d691488d4a0d92fd",
@@ -66,7 +111,7 @@
           "specs": [
             {
               "title": "US-001-TC-02 - Unsuccessful login using invalid username shows error message",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -79,18 +124,63 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 896,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 6084,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js:28:24",
+                        "location": {
+                          "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js",
+                          "column": 24,
+                          "line": 28
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[90m// Assert\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://practicetestautomation.com/logged-in-successfully/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(pom\u001b[33m.\u001b[39merrorMessage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js",
+                            "column": 24,
+                            "line": 28
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n\n\n  26 |\n  27 |     // Assert\n> 28 |     await expect(page).toHaveURL('https://practicetestautomation.com/logged-in-successfully/');\n     |                        ^\n  29 |     await expect(pom.errorMessage).toBeVisible();\n  30 |   });\n  31 | });\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js:28:24"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T19:13:15.972Z",
+                      "startTime": "2026-05-04T19:15:59.973Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-02-Login-Page-US-b4a56-sername-shows-error-message-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-02-Login-Page-US-b4a56-sername-shows-error-message-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-02-Login-Page-US-b4a56-sername-shows-error-message-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-02-Login-Page-US-b4a56-sername-shows-error-message-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js",
+                        "column": 24,
+                        "line": 28
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "a57a0455a65569d03739-dd3134ba950c5c6eac23",
@@ -131,12 +221,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 915,
+                      "duration": 777,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T19:13:18.720Z",
+                      "startTime": "2026-05-04T19:16:08.043Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -182,12 +272,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 886,
+                      "duration": 726,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T19:13:21.482Z",
+                      "startTime": "2026-05-04T19:16:10.662Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -207,11 +297,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-04T19:13:22.557Z",
-    "duration": 11360.134,
-    "expected": 4,
+    "startTime": "2026-05-04T19:16:11.575Z",
+    "duration": 17962.891,
+    "expected": 2,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }
