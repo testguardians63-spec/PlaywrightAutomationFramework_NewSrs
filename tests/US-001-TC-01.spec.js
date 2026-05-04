@@ -22,7 +22,7 @@ test.describe('Login Page', () => {
     await pom.isLoaded();
     await pom.usernameInput.fill(data.credentialsUsed.username);
     await pom.passwordInput.fill(data.credentialsUsed.password);
-    
+    await pom.submitButton.click();
 
     // Assert
     await expect(page).toHaveURL('https://practicetestautomation.com/logged-in-successfully/');
