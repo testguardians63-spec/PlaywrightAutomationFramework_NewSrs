@@ -19,7 +19,7 @@ test.describe('Login Page', () => {
     await pom.submitButton.click();
 
     // Assert
-    await expect(page).toHaveURL('https://practicetestautomation.com/logged-in-successfully/');
+    await expect(page).toHaveURL('/logged-in-successfully/');
     await expect(pom.errorMessage).not.toBeVisible();
   });
 });
