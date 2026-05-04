@@ -29,7 +29,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5954,
+                      "duration": 5967,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:28:24",
@@ -53,7 +53,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T19:01:24.947Z",
+                      "startTime": "2026-05-04T19:09:44.427Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -125,12 +125,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 884,
+                      "duration": 841,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T19:01:32.777Z",
+                      "startTime": "2026-05-04T19:09:52.492Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -176,12 +176,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 988,
+                      "duration": 875,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T19:01:35.357Z",
+                      "startTime": "2026-05-04T19:09:55.146Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -227,12 +227,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 862,
+                      "duration": 885,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T19:01:38.086Z",
+                      "startTime": "2026-05-04T19:09:57.833Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -252,8 +252,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-04T19:01:39.153Z",
-    "duration": 11973.47,
+    "startTime": "2026-05-04T19:09:58.918Z",
+    "duration": 12074.080000000002,
     "expected": 3,
     "skipped": 0,
     "unexpected": 1,
