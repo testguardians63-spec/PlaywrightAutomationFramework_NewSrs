@@ -29,31 +29,31 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11628,
+                      "duration": 5954,
                       "error": {
-                        "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n",
-                        "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:23:29",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:28:24",
                         "location": {
                           "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js",
-                          "column": 29,
-                          "line": 23
+                          "column": 24,
+                          "line": 28
                         },
-                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39misLoaded()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mcredentialsUsed\u001b[33m.\u001b[39musername)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mcredentialsUsed\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[90m// Assert\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://practicetestautomation.com/logged-in-successfully/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(pom\u001b[33m.\u001b[39merrorMessage)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js",
-                            "column": 29,
-                            "line": 23
+                            "column": 24,
+                            "line": 28
                           },
-                          "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n\n  21 |     await pom.goto();\n  22 |     await pom.isLoaded();\n> 23 |     await pom.usernameInput.fill(data.credentialsUsed.username);\n     |                             ^\n  24 |     await pom.passwordInput.fill(data.credentialsUsed.password);\n  25 |     await pom.submitButton.click();\n  26 |\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:23:29"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://practicetestautomation.com/\u001b[7mlogged-in-successfully\u001b[27m/\"\u001b[39m\nReceived: \u001b[31m\"https://practicetestautomation.com/\u001b[7mpractice-test-login\u001b[27m/\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"https://practicetestautomation.com/practice-test-login/\"\u001b[22m\n\n\n  26 |\n  27 |     // Assert\n> 28 |     await expect(page).toHaveURL('https://practicetestautomation.com/logged-in-successfully/');\n     |                        ^\n  29 |     await expect(pom.errorMessage).not.toBeVisible();\n  30 |   });\n  31 | });\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:28:24"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T14:30:44.527Z",
+                      "startTime": "2026-05-04T19:01:24.947Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -79,8 +79,8 @@
                       ],
                       "errorLocation": {
                         "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js",
-                        "column": 29,
-                        "line": 23
+                        "column": 24,
+                        "line": 28
                       }
                     }
                   ],
@@ -111,7 +111,7 @@
           "specs": [
             {
               "title": "US-001-TC-02 - Unsuccessful login using invalid username shows error message",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -124,63 +124,18 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 11368,
-                      "error": {
-                        "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n",
-                        "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js:23:29",
-                        "location": {
-                          "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js",
-                          "column": 29,
-                          "line": 23
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39misLoaded()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mtestDataRows[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mtestValue)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mcredentialsUsed\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js",
-                            "column": 29,
-                            "line": 23
-                          },
-                          "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n\n  21 |     await pom.goto();\n  22 |     await pom.isLoaded();\n> 23 |     await pom.usernameInput.fill(data.testDataRows[0].testValue);\n     |                             ^\n  24 |     await pom.passwordInput.fill(data.credentialsUsed.password);\n  25 |     await pom.submitButton.click();\n  26 |\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js:23:29"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 884,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T14:30:59.156Z",
+                      "startTime": "2026-05-04T19:01:32.777Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-02-Login-Page-US-b4a56-sername-shows-error-message-chromium/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-02-Login-Page-US-b4a56-sername-shows-error-message-chromium/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-02-Login-Page-US-b4a56-sername-shows-error-message-chromium/error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-02-Login-Page-US-b4a56-sername-shows-error-message-chromium/trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-02.spec.js",
-                        "column": 29,
-                        "line": 23
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "a57a0455a65569d03739-dd3134ba950c5c6eac23",
@@ -207,7 +162,7 @@
           "specs": [
             {
               "title": "US-001-TC-03 - Unsuccessful login using invalid password shows error message",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -220,63 +175,18 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 11466,
-                      "error": {
-                        "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n",
-                        "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js:23:29",
-                        "location": {
-                          "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js",
-                          "column": 29,
-                          "line": 23
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39misLoaded()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mcredentialsUsed\u001b[33m.\u001b[39musername)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mtestDataRows[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mtestValue)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js",
-                            "column": 29,
-                            "line": 23
-                          },
-                          "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n\n  21 |     await pom.goto();\n  22 |     await pom.isLoaded();\n> 23 |     await pom.usernameInput.fill(data.credentialsUsed.username);\n     |                             ^\n  24 |     await pom.passwordInput.fill(data.testDataRows[0].testValue);\n  25 |     await pom.submitButton.click();\n  26 |\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js:23:29"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 988,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T14:31:12.393Z",
+                      "startTime": "2026-05-04T19:01:35.357Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-03-Login-Page-US-60209-assword-shows-error-message-chromium/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-03-Login-Page-US-60209-assword-shows-error-message-chromium/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-03-Login-Page-US-60209-assword-shows-error-message-chromium/error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-03-Login-Page-US-60209-assword-shows-error-message-chromium/trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-03.spec.js",
-                        "column": 29,
-                        "line": 23
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "a0f5a6c1fa503101fe58-4b0d34b3a816c307e6be",
@@ -303,7 +213,7 @@
           "specs": [
             {
               "title": "US-001-TC-04 - Boundary test for username length",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -316,63 +226,18 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 11471,
-                      "error": {
-                        "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n",
-                        "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-04.spec.js:23:29",
-                        "location": {
-                          "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-04.spec.js",
-                          "column": 29,
-                          "line": 23
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39misLoaded()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mtestDataRows[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mtestValue)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mcredentialsUsed\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m pom\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-04.spec.js",
-                            "column": 29,
-                            "line": 23
-                          },
-                          "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email')\u001b[22m\n\n\n  21 |     await pom.goto();\n  22 |     await pom.isLoaded();\n> 23 |     await pom.usernameInput.fill(data.testDataRows[0].testValue);\n     |                             ^\n  24 |     await pom.passwordInput.fill(data.credentialsUsed.password);\n  25 |     await pom.submitButton.click();\n  26 |\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-04.spec.js:23:29"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 862,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-04T14:31:25.738Z",
+                      "startTime": "2026-05-04T19:01:38.086Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-04-Login-Page-US-8b1dc-ry-test-for-username-length-chromium/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-04-Login-Page-US-8b1dc-ry-test-for-username-length-chromium/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-04-Login-Page-US-8b1dc-ry-test-for-username-length-chromium/error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/test-results/US-001-TC-04-Login-Page-US-8b1dc-ry-test-for-username-length-chromium/trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-04.spec.js",
-                        "column": 29,
-                        "line": 23
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "eee857aebc117037d4cc-78b8da198a82898afee8",
@@ -387,11 +252,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-04T14:31:37.447Z",
-    "duration": 50552.64,
-    "expected": 0,
+    "startTime": "2026-05-04T19:01:39.153Z",
+    "duration": 11973.47,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 4,
+    "unexpected": 1,
     "flaky": 0
   }
 }
