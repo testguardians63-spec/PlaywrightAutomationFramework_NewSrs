@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import UnknownPage from '../pages/UnknownPage.js';
+import LoginPage from '../pages/LoginPage.js';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -15,17 +15,17 @@ test.describe('Login Page', () => {
   test('US-001-TC-01 - User can log in with valid credentials', async ({ page }) => {
     // Arrange
     const data = testData['US-001-TC-01'] || {};
-    const pom = new UnknownPage(page);
+    const pom = new LoginPage(page);
 
     // Act
     await pom.goto();
     await pom.isLoaded();
-    await pom.usernameInput.fill(data.credentialsUsed.username);
-    await pom.passwordInput.fill(data.credentialsUsed.password);
-    await pom.submitButton.click();
+    await pom.username.fill(data.credentialsUsed.username);
+    await pom.password.fill(data.credentialsUsed.password);
+    await pom.signInBtn.click();
 
     // Assert
-    await expect(page).toHaveURL('https://practicetestautomation.com/logged-in-successfully/');
-    await expect(pom.errorMessage).not.toBeVisible();
+    await expect(page).toHaveURL('https://rahulshettyacademy.com/angularpractice/shop/');
+    await expect(pom.checkoutBtn).toBeVisible();
   });
 });

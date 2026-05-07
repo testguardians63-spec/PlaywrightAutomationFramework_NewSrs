@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import UnknownPage from '../pages/UnknownPage.js';
+import LoginPage from '../pages/LoginPage.js';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -12,20 +12,19 @@ test.describe('Login Page', () => {
    * @requirement US-001
    * @priority High
    */
-  test('US-001-TC-02 - Unsuccessful login using invalid username shows error message', async ({ page }) => {
+  test('US-001-TC-02 - Unsuccessful login using invalid username shows error message Incorrect username/password', async ({ page }) => {
     // Arrange
     const data = testData['US-001-TC-02'] || {};
-    const pom = new UnknownPage(page);
+    const pom = new LoginPage(page);
 
     // Act
     await pom.goto();
     await pom.isLoaded();
-    await pom.usernameInput.fill(data.testDataRows[0].testValue);
-    await pom.passwordInput.fill(data.credentialsUsed.password);
-    await pom.submitButton.click();
+    await pom.username.fill(data.testDataRows[0].testValue);
+    await pom.password.fill(data.credentialsUsed.password);
+    await pom.signInBtn.click();
 
     // Assert
-    await expect(page).toHaveURL('https://practicetestautomation.com/logged-in-successfully/');
     await expect(pom.errorMessage).toBeVisible();
   });
 });
