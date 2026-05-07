@@ -12,8 +12,8 @@ export default class LoginPage {
   get blogLink() { return this.page.locator('a[href="https://practicetestautomation.com/blog/"]'); }
   get contactLink() { return this.page.locator('a[href="https://practicetestautomation.com/contact/"]'); }
   get privacyPolicyLink() { return this.page.locator('a[href="https://practicetestautomation.com/privacy-policy/"]'); }
-  get usernameInput() { return this.page.locator('#ussername'); }
-  get passwordInput() { return this.page.locator('#passsword'); }
+  get usernameInput() { return this.page.locator('#email'); }
+  get passwordInput() { return this.page.locator('#passworddd'); }
   get toggleNavigationButton() { return this.page.locator('#toggle-navigation'); }
   get submitButton() { return this.page.locator('#submit'); }
   get errorMessage() { return this.page.locator('#error'); }
