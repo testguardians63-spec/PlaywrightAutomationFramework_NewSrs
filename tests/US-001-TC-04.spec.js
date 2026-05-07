@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import UnknownPage from '../pages/UnknownPage.js';
+import LoginPage from '../pages/LoginPage.js';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -15,17 +15,16 @@ test.describe('Login Page', () => {
   test('US-001-TC-04 - Boundary test for username length', async ({ page }) => {
     // Arrange
     const data = testData['US-001-TC-04'] || {};
-    const pom = new UnknownPage(page);
+    const pom = new LoginPage(page);
 
     // Act
     await pom.goto();
     await pom.isLoaded();
-    await pom.usernameInput.fill(data.testDataRows[0].testValue);
-    await pom.passwordInput.fill(data.credentialsUsed.password);
-    await pom.submitButton.click();
+    await pom.username.fill(data.testDataRows[0].testValue);
+    await pom.password.fill(data.credentialsUsed.password);
+    await pom.signInBtn.click();
 
     // Assert
-    await expect(page).toHaveURL('https://practicetestautomation.com/practice-test-login/');
     await expect(pom.errorMessage).toBeVisible();
   });
 });

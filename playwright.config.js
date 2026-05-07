@@ -14,7 +14,7 @@ export default defineConfig({
     ['list'],
   ],
   use: {
-    baseURL: process['env'].BASE_URL || "https://practicetestautomation.com/practice-test-login/",
+    baseURL: process['env'].BASE_URL || "https://rahulshettyacademy.com/loginpagePractise/",
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',

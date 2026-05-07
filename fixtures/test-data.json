@@ -6,28 +6,28 @@
     "testDataRows": [
       {
         "inputField": "username",
-        "testValue": "student",
+        "testValue": "rahulshettyacademy",
         "dataCategory": "credential",
         "isEdgeCase": false,
         "notes": "SRS-provided credential, used verbatim for happy-path scenario"
       },
       {
         "inputField": "password",
-        "testValue": "Password123",
+        "testValue": "Learning@830$3mK2",
         "dataCategory": "credential",
         "isEdgeCase": false,
         "notes": "SRS-provided credential, used verbatim for happy-path scenario"
       }
     ],
     "credentialsUsed": {
-      "username": "student",
-      "password": "Password123",
-      "email": "student",
+      "username": "rahulshettyacademy",
+      "password": "Learning@830$3mK2",
+      "email": "rahulshettyacademy",
       "firstName": "Test",
       "lastName": "Guardian"
     },
     "credentialSource": "srs",
-    "navigationUrl": "https://practicetestautomation.com/practice-test-login/",
+    "navigationUrl": "https://rahulshettyacademy.com/loginpagePractise/",
     "summary": "Deterministic fast-path: SRS credentials applied to happy-path test"
   },
   "US-001-TC-02": {
@@ -37,22 +37,29 @@
     "testDataRows": [
       {
         "inputField": "username",
-        "testValue": "invaliduser",
+        "testValue": "invalidusername",
         "dataCategory": "invalid",
         "isEdgeCase": false,
-        "notes": "This value was chosen to test the negative scenario of an invalid username."
+        "notes": "This value is chosen to test the negative scenario where an invalid username is entered."
+      },
+      {
+        "inputField": "password",
+        "testValue": "Learning@830$3mK2",
+        "dataCategory": "valid",
+        "isEdgeCase": false,
+        "notes": "This value is chosen to test the negative scenario where a valid password is entered with an invalid username."
       }
     ],
     "credentialsUsed": {
-      "username": "student",
-      "password": "Password123",
-      "email": "student",
+      "username": "rahulshettyacademy",
+      "password": "Learning@830$3mK2",
+      "email": "rahulshettyacademy",
       "firstName": "Test",
       "lastName": "Guardian"
     },
     "credentialSource": "srs",
-    "navigationUrl": "https://practicetestautomation.com/practice-test-login/",
-    "summary": "Test data set for invalid username in negative login test."
+    "navigationUrl": "https://rahulshettyacademy.com/loginpagePractise/",
+    "summary": "Test data set for negative login scenario with invalid username and valid password."
   },
   "US-001-TC-03": {
     "tcId": "US-001-TC-03",
@@ -61,29 +68,29 @@
     "testDataRows": [
       {
         "inputField": "username",
-        "testValue": "student",
+        "testValue": "rahulshettyacademy",
         "dataCategory": "valid",
         "isEdgeCase": false,
-        "notes": "Using the effective credentials provided by the pipeline."
+        "notes": "Using the effective credentials as specified by the SRS."
       },
       {
         "inputField": "password",
-        "testValue": "wrongpassword",
+        "testValue": "invalidpassword",
         "dataCategory": "invalid",
         "isEdgeCase": false,
-        "notes": "Intentionally providing a wrong password to test negative scenario."
+        "notes": "Intentionally using an incorrect password to test negative login functionality."
       }
     ],
     "credentialsUsed": {
-      "username": "student",
-      "password": "Password123",
-      "email": "student",
+      "username": "rahulshettyacademy",
+      "password": "Learning@830$3mK2",
+      "email": "rahulshettyacademy",
       "firstName": "Test",
       "lastName": "Guardian"
     },
     "credentialSource": "srs",
-    "navigationUrl": "https://practicetestautomation.com/practice-test-login/",
-    "summary": "Test data set for negative login scenario using valid username and invalid password."
+    "navigationUrl": "https://rahulshettyacademy.com/loginpagePractise/",
+    "summary": "Test data set for negative login scenario using effective credentials with an incorrect password."
   },
   "US-001-TC-04": {
     "tcId": "US-001-TC-04",
@@ -95,18 +102,25 @@
         "testValue": "a",
         "dataCategory": "boundary",
         "isEdgeCase": true,
-        "notes": "Test boundary condition with a single character as the username."
+        "notes": "Testing the minimum allowed length for the username field."
+      },
+      {
+        "inputField": "password",
+        "testValue": "Learning@830$3mK2",
+        "dataCategory": "valid",
+        "isEdgeCase": false,
+        "notes": "Using the effective credentials as specified."
       }
     ],
     "credentialsUsed": {
-      "username": "student",
-      "password": "Password123",
-      "email": "student",
+      "username": "rahulshettyacademy",
+      "password": "Learning@830$3mK2",
+      "email": "rahulshettyacademy",
       "firstName": "Test",
       "lastName": "Guardian"
     },
     "credentialSource": "srs",
-    "navigationUrl": "https://practicetestautomation.com/practice-test-login/",
-    "summary": "Test with a single character as the username to check boundary condition."
+    "navigationUrl": "https://rahulshettyacademy.com/loginpagePractise/",
+    "summary": "Test data set for boundary condition on username field and valid password."
   }
 }
