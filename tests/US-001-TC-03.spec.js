@@ -12,7 +12,7 @@ test.describe('Login Page', () => {
    * @requirement US-001
    * @priority High
    */
-  test('US-001-TC-03 - Unsuccessful login using invalid password shows error message Incorrect username/password', async ({ page }) => {
+  test('US-001-TC-03 - Unsuccessful login using invalid password shows error message', async ({ page }) => {
     // Arrange
     const data = testData['US-001-TC-03'] || {};
     const pom = new LoginPage(page);
@@ -20,8 +20,8 @@ test.describe('Login Page', () => {
     // Act
     await pom.goto();
     await pom.isLoaded();
-    await pom.username.fill(data.credentialsUsed.username);
-    await pom.password.fill(data.testDataRows[0].testValue);
+    await pom.usernameInput.fill(data.credentialsUsed.username);
+    await pom.passwordInput.fill(data.testDataRows[0].testValue);
     await pom.signInBtn.click();
 
     // Assert

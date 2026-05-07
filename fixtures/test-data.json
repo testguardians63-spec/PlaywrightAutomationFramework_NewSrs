@@ -40,14 +40,14 @@
         "testValue": "invalidusername",
         "dataCategory": "invalid",
         "isEdgeCase": false,
-        "notes": "This value is chosen to test the negative scenario where an invalid username is entered."
+        "notes": "This value is chosen to test the negative scenario with an invalid username."
       },
       {
         "inputField": "password",
         "testValue": "Learning@830$3mK2",
         "dataCategory": "valid",
         "isEdgeCase": false,
-        "notes": "This value is chosen to test the negative scenario where a valid password is entered with an invalid username."
+        "notes": "This value is chosen to test the negative scenario with a valid password."
       }
     ],
     "credentialsUsed": {
@@ -59,7 +59,7 @@
     },
     "credentialSource": "srs",
     "navigationUrl": "https://rahulshettyacademy.com/loginpagePractise/",
-    "summary": "Test data set for negative login scenario with invalid username and valid password."
+    "summary": "Test data set for invalid username with valid password to verify incorrect username/password error message."
   },
   "US-001-TC-03": {
     "tcId": "US-001-TC-03",
@@ -71,14 +71,14 @@
         "testValue": "rahulshettyacademy",
         "dataCategory": "valid",
         "isEdgeCase": false,
-        "notes": "Using the effective credentials as specified by the SRS."
+        "notes": "Using the effective credentials as specified."
       },
       {
         "inputField": "password",
         "testValue": "invalidpassword",
         "dataCategory": "invalid",
         "isEdgeCase": false,
-        "notes": "Intentionally using an incorrect password to test negative login functionality."
+        "notes": "Intentionally using an incorrect password to test negative scenario."
       }
     ],
     "credentialsUsed": {
@@ -90,7 +90,7 @@
     },
     "credentialSource": "srs",
     "navigationUrl": "https://rahulshettyacademy.com/loginpagePractise/",
-    "summary": "Test data set for negative login scenario using effective credentials with an incorrect password."
+    "summary": "Test data set for negative login scenario using valid username and invalid password."
   },
   "US-001-TC-04": {
     "tcId": "US-001-TC-04",
@@ -102,14 +102,14 @@
         "testValue": "a",
         "dataCategory": "boundary",
         "isEdgeCase": true,
-        "notes": "Testing the minimum allowed length for the username field."
+        "notes": "Using the minimum allowed length for the username field."
       },
       {
         "inputField": "password",
         "testValue": "Learning@830$3mK2",
         "dataCategory": "valid",
         "isEdgeCase": false,
-        "notes": "Using the effective credentials as specified."
+        "notes": "Using the effective credentials provided by the pipeline."
       }
     ],
     "credentialsUsed": {
@@ -121,6 +121,6 @@
     },
     "credentialSource": "srs",
     "navigationUrl": "https://rahulshettyacademy.com/loginpagePractise/",
-    "summary": "Test data set for boundary condition on username field and valid password."
+    "summary": "Test data set for boundary condition with minimum username length and valid password."
   }
 }

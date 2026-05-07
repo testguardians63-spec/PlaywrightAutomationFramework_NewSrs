@@ -20,12 +20,12 @@ test.describe('Login Page', () => {
     // Act
     await pom.goto();
     await pom.isLoaded();
-    await pom.username.fill(data.credentialsUsed.username);
-    await pom.password.fill(data.credentialsUsed.password);
+    await pom.usernameInput.fill(data.credentialsUsed.username);
+    await pom.passwordInput.fill(data.credentialsUsed.password);
     await pom.signInBtn.click();
 
     // Assert
-    await expect(page).toHaveURL('https://rahulshettyacademy.com/angularpractice/shop/');
+    await expect(page).toHaveURL('https://rahulshettyacademy.com/angularpractice/shop');
     await expect(pom.checkoutBtn).toBeVisible();
   });
 });

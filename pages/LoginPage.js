@@ -5,26 +5,24 @@ export default class LoginPage {
     this.page = page;
   }
 
-  get username() { return this.page.locator('#username'); }
-  get password() { return this.page.locator('#password'); }
-  get usertype() { return this.page.locator('#usertype'); }
-  get terms() { return this.page.locator('#terms'); }
+  get divAlert() { return this.page.locator('.alert-danger'); }
+  get usernameInput() { return this.page.locator('#username'); }
+  get passwordInput() { return this.page.locator('#password'); }
+  get userTypeInput() { return this.page.locator('#usertype'); }
+  get termsCheckbox() { return this.page.locator('#terms'); }
   get signInBtn() { return this.page.locator('#signInBtn'); }
-  get cancelBtn() { return this.page.locator('#cancelBtn'); }
-  get okayBtn() { return this.page.locator('#okayBtn'); }
-  get errorMessage() { return this.page.locator('#error'); }
 
   async goto() {
     await this.page.goto('https://rahulshettyacademy.com/loginpagePractise/');
   }
 
   async isLoaded() {
-    await expect(this.signInBtn).toBeVisible();
+    await expect(this.divAlert).toBeVisible();
   }
 
   async login(username, password) {
-    await this.username.fill(username);
-    await this.password.fill(password);
+    await this.usernameInput.fill(username);
+    await this.passwordInput.fill(password);
     await this.signInBtn.click();
   }
 }
