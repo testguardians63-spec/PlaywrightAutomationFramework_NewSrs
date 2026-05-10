@@ -12,7 +12,7 @@ test.describe('Login Page', () => {
    * @requirement US-001
    * @priority Medium
    */
-  test('US-001-TC-04 - Boundary test for username length', async ({ page }) => {
+  test('US-001-TC-04 - Successful login Navigates to new page(new page URL contains practicetestautomation.com/logged-in-successfully/) to show Log out button and expected text', async ({ page }) => {
     // Arrange
     const data = testData['US-001-TC-04'] || {};
     const pom = new LoginPage(page);
@@ -20,11 +20,13 @@ test.describe('Login Page', () => {
     // Act
     await pom.goto();
     await pom.isLoaded();
-    await pom.usernameInput.fill(data.testDataRows[0].testValue);
+    await pom.usernameInput.fill(data.credentialsUsed.username);
     await pom.passwordInput.fill(data.credentialsUsed.password);
     await pom.submitButton.click();
 
     // Assert
-    await expect(pom.errorMessage).toBeVisible();
+    await expect(page).toHaveURL('https://practicetestautomation.com/logged-in-successfully/');
+    await expect(pom.logoutButton).toBeVisible();
+    await expect(pom.successMessage).toBeVisible();
   });
 });
