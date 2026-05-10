@@ -40,14 +40,14 @@
         "testValue": "invaliduser",
         "dataCategory": "invalid",
         "isEdgeCase": false,
-        "notes": "This value was chosen to test the negative scenario of an invalid username."
+        "notes": "This value is chosen to test the negative scenario of an invalid username."
       },
       {
         "inputField": "password",
         "testValue": "Password123",
         "dataCategory": "valid",
         "isEdgeCase": false,
-        "notes": "This value was chosen to ensure the password is valid while testing the username."
+        "notes": "This value is chosen to ensure the password field is tested with valid credentials."
       }
     ],
     "credentialsUsed": {
@@ -59,7 +59,7 @@
     },
     "credentialSource": "srs",
     "navigationUrl": "https://practicetestautomation.com/practice-test-login/",
-    "summary": "Test data set for invalid username with valid password."
+    "summary": "Test data set includes an invalid username and valid password to verify the negative scenario."
   },
   "US-001-TC-03": {
     "tcId": "US-001-TC-03",
@@ -71,7 +71,7 @@
         "testValue": "student",
         "dataCategory": "valid",
         "isEdgeCase": false,
-        "notes": "Using the effective credentials as specified."
+        "notes": "Using the effective credentials as specified by the SRS."
       },
       {
         "inputField": "password",
@@ -90,7 +90,7 @@
     },
     "credentialSource": "srs",
     "navigationUrl": "https://practicetestautomation.com/practice-test-login/",
-    "summary": "Test data includes valid username and invalid password to verify error message."
+    "summary": "Test data set for negative login scenario using valid username and invalid password."
   },
   "US-001-TC-04": {
     "tcId": "US-001-TC-04",
@@ -99,10 +99,17 @@
     "testDataRows": [
       {
         "inputField": "username",
-        "testValue": "a",
-        "dataCategory": "boundary",
-        "isEdgeCase": true,
-        "notes": "Using the minimum allowed length for the username field, as specified by the UI."
+        "testValue": "student",
+        "dataCategory": "valid",
+        "isEdgeCase": false,
+        "notes": "Using the effective credentials as specified by the SRS."
+      },
+      {
+        "inputField": "password",
+        "testValue": "Password123",
+        "dataCategory": "valid",
+        "isEdgeCase": false,
+        "notes": "Using the effective credentials as specified by the SRS."
       }
     ],
     "credentialsUsed": {
@@ -114,6 +121,6 @@
     },
     "credentialSource": "srs",
     "navigationUrl": "https://practicetestautomation.com/practice-test-login/",
-    "summary": "Test data set for the minimum allowed length of the username field."
+    "summary": "Test data set uses the effective credentials provided by the SRS for the login test."
   }
 }

@@ -26,6 +26,7 @@ test.describe('Login Page', () => {
 
     // Assert
     await expect(page).toHaveURL('https://practicetestautomation.com/logged-in-successfully/');
-    await expect(pom.errorMessage).not.toBeVisible();
+    await expect(pom.logoutButton).toBeVisible();
+    await expect(pom.successMessage).toBeVisible();
   });
 });
