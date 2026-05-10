@@ -29,7 +29,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 1543,
+                      "duration": 1421,
                       "error": {
                         "message": "Error: toBeVisible can be only used with Locator object",
                         "stack": "Error: toBeVisible can be only used with Locator object\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-01.spec.js:29:36",
@@ -53,7 +53,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-10T18:13:16.889Z",
+                      "startTime": "2026-05-10T18:16:11.179Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -125,12 +125,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 914,
+                      "duration": 831,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-10T18:13:21.782Z",
+                      "startTime": "2026-05-10T18:16:15.107Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -176,12 +176,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 962,
+                      "duration": 859,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-10T18:13:24.517Z",
+                      "startTime": "2026-05-10T18:16:17.761Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -227,7 +227,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 1736,
+                      "duration": 1366,
                       "error": {
                         "message": "Error: toBeVisible can be only used with Locator object",
                         "stack": "Error: toBeVisible can be only used with Locator object\n    at /home/runner/work/PlaywrightAutomationFramework_NewSrs/PlaywrightAutomationFramework_NewSrs/tests/US-001-TC-04.spec.js:29:36",
@@ -251,7 +251,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-10T18:13:27.290Z",
+                      "startTime": "2026-05-10T18:16:20.449Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -297,8 +297,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-10T18:13:29.300Z",
-    "duration": 10040.516,
+    "startTime": "2026-05-10T18:16:22.084Z",
+    "duration": 8546.764,
     "expected": 2,
     "skipped": 0,
     "unexpected": 2,
